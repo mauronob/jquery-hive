@@ -241,9 +241,7 @@
 
         if ( Pollen.evaluate.isObj(arg) ) {
           for ( var prop in arg ) {
-            if ( arg[prop] ) {
               fn.call(arg[prop], prop, arg[prop], i++);
-            }
           }
         }
       },
